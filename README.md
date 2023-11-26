@@ -1,1 +1,1 @@
-# extension-privacy-policy
+Salesforce Quick Access Extension Privacy Policy
