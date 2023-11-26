@@ -1,12 +1,212 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Privacy Policy</title>
-	<link rel="icon" type="image/png" href="quick_access.png">
+	<link rel="icon" type="image/png"
+		href="quick_access.png">
+	<style>
+		body{
+			background-color: rgb(47, 120, 120);
+		}
+		.body::-webkit-scrollbar {
+			height: 2px !important;
+			width: 5px !important;
+		}
+		.body::-webkit-scrollbar-track {
+			background-color: #f1f1f1 !important;
+		}
+		.body::-webkit-scrollbar-thumb {
+			background-color: lightgray !important;
+			border-radius: 0px;
+		}
+		.body::-webkit-scrollbar-thumb:hover {
+			background-color: #b1aeae !important;
+		}
+		.c {
+			background-color: rgb(47, 120, 120);
+			padding: 20px;
+		}
+
+		.index_c {
+			justify-content: center !important;
+			align-items: center !important;
+			border: 1px ridge rgba(202, 202, 202, 0.57) !important;
+			-webkit-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+			-moz-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+			box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+		}
+
+		.p_dvs {
+			display: grid;
+			grid-row-gap: 20px !important;
+			grid-template-rows: auto auto auto auto !important;
+			padding-top: 15px;
+		}
+
+		.p_dv {
+			display: flex;
+			align-items: center !important;
+			justify-content: center !important;
+		}
+
+		.anc {
+			font-size: 25px;
+			text-decoration: underline;
+			color: gray;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.desc {
+			padding: 2% 20% 0% 20%;
+			color: teal;
+			margin-bottom: 10px;
+			font-size: 20px;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+		}
+
+		.p_dv1 {
+			color: white;
+			font-size: 3.5rem;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+			font-weight: 400;
+		}
+
+		.p_dv2 {
+			color: rgb(239, 235, 235);
+			font-size: 1.2rem;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+			font-weight: 400;
+			padding: 2% 20% 0% 20%;
+		}
+
+		.ul {
+			list-style-type: disc;
+			padding-left: 40px;
+		}
+
+		.card {
+			border: 1px ridge rgba(202, 202, 202, 0.57) !important;
+			-webkit-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+			-moz-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+			box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+			border-radius: 5px !important;
+			width: 70%;
+			padding: 20px 20px;
+		}
+
+		.card-head {
+			color: rgb(239, 235, 235);
+			font-size: 1.5rem;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+			padding-bottom: 10px;
+		}
+
+		.short_desc {
+			color: rgb(207, 207, 207);
+			font-size: 1.2rem;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+		}
+
+		.card-desc {
+			color: rgb(207, 207, 207);
+			font-size: 1.2rem;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+		}
+
+		.icon {
+			height: 20px;
+		}
+
+		.p_dv4 {
+			font-weight: bold;
+			font-size: 17px;
+			background-color: #e3e3e3;
+		}
+
+		.spn {
+			padding-left: 10px;
+			
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+			font-family: 'Bree Serif', serif;
+		}
+	</style>
 </head>
+
 <body>
-	This is privacy
+	<div class="c">
+		<div class="index_c">
+			<div class="p_dvs">
+				<div class="p_dv p_dv1">
+					Privacy Policy
+				</div>
+				<div class="p_dv p_dv2">
+					One of our main priorities is the privacy of our users. This Privacy Policy document contains types
+					of information that is collected and recorded by our chrome extensions and how we use it.
+				</div>
+				<div class="p_dv p_dv3">
+					<div class="card card1">
+						<div class="card-head card-head1">
+							Information we collect!
+						</div>
+						<div class="short_desc">
+							We are collecting following information from your salesforce org:
+						</div>
+						<div class="card-desc card-desc1">
+							<ul class="ul">
+								<li>
+									Using Rest / Soap API to show metadata list.
+								</li>
+								<li>
+									Reading Almost all kind of metadata to show list and detail of modifications.
+								</li>
+								<li>
+									Reading salesforce session to perform read actions.
+								</li>
+								<li>
+									Using tooling patch for some updation like when user click on edit record detail and custom labels for
+									now.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="p_dv p_dv5">
+					<div class="card card1">
+						<div class="card-head card-head1">
+							Third Party Privacy Policies!
+						</div>
+						<div class="short_desc">
+							Our apps does not share any of your details and information with any third-party apps or servers.
+						</div>
+					</div>
+				</div>
+				<div class="p_dv p_dv6">
+					<div class="card card1">
+						<div class="card-head card-head1">
+							Do Not Sell My Personal Information!
+						</div>
+						<div class="short_desc">
+							We are not collecting and sharing any information anywhere.
+						</div>
+					</div>
+				</div>
+				<div class="p_dv p_dv4">
+					<img class="icon" src="quick_access.png" /><span class="spn">&#169; 2023
+						Imtiyaz-Khan, Tech.</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
