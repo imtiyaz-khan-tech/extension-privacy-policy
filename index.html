@@ -1,80 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extension Privacy Policy</title>
+    <link rel="icon" type="image/png"
+        href="quick_access.png">
+    <style>
+        body {
+            overflow: hidden;
+        }
 
-    .tabs {
-      display: flex;
-      list-style: none;
-      padding: 0;
-    }
+        .c {
+            background-color: white;
+            height: 100vh;
+            padding: 20px;
+        }
 
-    .tab {
-      margin-right: 10px;
-      padding: 10px 15px;
-      cursor: pointer;
-      background-color: #eee;
-      border: 1px solid #ccc;
-      border-radius: 5px 5px 0 0;
-    }
+        .index_c {
+            height: 90%;
+            width: 100%;
+            justify-content: center !important;
+            align-items: center !important;
+            border: 1px ridge rgba(202, 202, 202, 0.57) !important;
+            -webkit-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+            -moz-box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+            box-shadow: -1px -1px 8px 3px rgba(202, 202, 202, 0.57) !important;
+            border-radius: 5px !important;
+        }
 
-    .tab:hover {
-      background-color: #ddd;
-    }
+        .extns_dvs {
+            display: grid;
+            grid-row-gap: 5px !important;
+            grid-template-rows: auto auto auto !important;
+        }
 
-    .tab-content {
-      display: none;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 0 0 5px 5px;
-    }
+        .extns_dv {
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+        }
 
-    .tab-content.active {
-      display: block;
-    }
-  </style>
+        .anc {
+            font-size: 25px;
+            text-decoration: underline;
+            color: gray;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .desc {
+            padding: 2% 20% 0% 20%;
+            color: teal;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Bree Serif', serif;
+        }
+    </style>
 </head>
+
 <body>
-
-<div class="tabs">
-  <div class="tab" onclick="openTab('tab1')">Tab 1</div>
-  <div class="tab" onclick="openTab('tab2')">Tab 2</div>
-  <div class="tab" onclick="openTab('tab3')">Tab 3</div>
-</div>
-
-<div class="tab-content" id="tab1">
-  <h2>Tab 1 Content</h2>
-  <p>This is the content of Tab 1.</p>
-</div>
-
-<div class="tab-content" id="tab2">
-  <h2>Tab 2 Content</h2>
-  <p>This is the content of Tab 2.</p>
-</div>
-
-<div class="tab-content" id="tab3">
-  <h2>Tab 3 Content</h2>
-  <p>This is the content of Tab 3.</p>
-</div>
-
-<script>
-  function openTab(tabId) {
-    // Hide all tab content
-    var tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(function(content) {
-      content.classList.remove('active');
-    });
-
-    // Show the selected tab content
-    var selectedTab = document.getElementById(tabId);
-    selectedTab.classList.add('active');
-  }
-</script>
-
+    <div class="c">
+        <div class="index_c">
+            <div class="extns_dvs">
+                <div class="extns_dv extns_dv1">
+                    <img class="icon icon1" src="quick_access.png" />
+                </div>
+                <div class="extns_dv extns_dv2">
+                    <a class="anc anc1" href="salesforce_quick_access_privacy-policy.html">Salesforce Quick Access Privacy Policy</a>
+                </div>
+                <div class="extns_dv extns_dv3">
+                    <div class="desc">
+                        This is Salesforce Quick Access and helper extension for salesforce developers to quickly check
+                        salesforce metadata like apex, lwc, email templates, custom labels, vf pages and components and
+                        many more, and also view records table, view record and edit records and create debug logs,
+                        search view and many more inside.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
